@@ -1,7 +1,7 @@
 const mostrarMensajeSegunEdadIf = (edad) => {
     if (edad >= 18) {
       // Anidé el if de 90 años para que no tenga que verificarlo si no es mayor de edad, no se si es mas optimo o no pero tengo entendido que así se evita hacer una verificacion extra cuando no es necesario
-      if (edad >= 90) {
+      if (edad > 90) {
         return "Que edad tan inusual, puede pasar!";
       }
   
