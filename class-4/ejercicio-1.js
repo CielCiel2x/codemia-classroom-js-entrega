@@ -1,20 +1,20 @@
 const traducirPalabra = (palabra) => {
     switch(palabra) {
         case "casa":
-            return "house";
+            return console.log("house");
 
         case "mesa":
-            return "table";
+            return console.log("table");
 
         case "perro":
-            return "dog";
+            return console.log("dog");
 
         case "gato":
-            return "cat";
+            return console.log("cat")
 
         default:
-            return "";
+            break;
     }
 }
 
-console.log(traducirPalabra("deprimision"));
+traducirPalabra("perro");
