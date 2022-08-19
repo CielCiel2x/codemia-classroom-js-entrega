@@ -1,13 +1,9 @@
 const higherThanZero = (numA, numB) => {
-    if (numA === 0 || numB === 0) {
-      return "ninguno de los numeros debe ser cero";
-    } else if (numA > 0 && numB > 0) {
+    if (numA > 0 && numB > 0) {
       return 1;
     } else if (numA < 0 && numB < 0) {
       return -1;
-    } else if (numA > 0 && numB < 0) {
-      return 0;
-    }
+    } 
     return 0;
   };
   console.log(higherThanZero(32, 0));
