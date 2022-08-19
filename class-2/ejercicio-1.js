@@ -1,5 +1,5 @@
 const horasDelDiaIf = (hora) => {
-    if (hora > 23 || hora < 9) {
+    if (hora > 21 || hora < 9) {
       return "no estoy disponible, llamame entre las 9 y las 23";
     } else if (hora >= 19) {
       return "buenas noches";
@@ -14,7 +14,7 @@ const horasDelDiaIf = (hora) => {
   
   const horasDelDiaTernario = (hora) => {
     let saludo =
-      hora > 23
+      hora > 21
         ? "no estoy disponible, llamame entre las 9 y las 21"
         : hora >= 19
         ? "buenas noches"
