@@ -1,5 +1,5 @@
-const calcularIva = (precio, porcentajeIva) => {
-    return precio * porcentajeIva;
+const calcularIva = (precio, IVA) => {
+    return precio * IVA;
   };
   
   console.log(calcularIva(100, 1.21));
