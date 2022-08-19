@@ -2,4 +2,4 @@ const calcularIva = (precio, IVA) => {
     return precio * IVA;
   };
   
-  console.log(calcularIva(100, 1.21));
+  console.log(calcularIva(5, 1.21));
