@@ -1,6 +1,6 @@
 const wrapAroundKms = (kms) => {
     if(Number(kms) > 99999) {
-        return kms - 100000;
+        return kms % 100000;
     } else if (Number(kms) < 0) {
         return "el número debe ser positivo";
     } else if (kms === null || kms === undefined || kms === "" || typeof kms == "boolean") {
@@ -14,6 +14,7 @@ console.log(wrapAroundKms(0))
 console.log(wrapAroundKms(99999))
 console.log(wrapAroundKms(100000))
 console.log(wrapAroundKms(100001))
+console.log(wrapAroundKms(300001))
 console.log(wrapAroundKms(null))
 console.log(wrapAroundKms(undefined))
 console.log(wrapAroundKms(""))
